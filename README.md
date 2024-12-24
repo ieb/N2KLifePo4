@@ -13,7 +13,7 @@ Because I use ChromeOS for other things on my boat, and none of the Android apps
 
 # How does it work ?
 
-It consumes PGN 127508 and 130829 from a seasmart http stream the latter containing registers 03, 04, 05. On reception the display is modified. History is captured and saved every 60s into local storage giving graphs of several parameters over a few days.
+It consumes PGN 127508 and 130829 from a seasmart http stream the latter is proprietary containing registers 03, 04, 05 from a JBD BMS. Use https://github.com/ieb/N2KNMEA0183Wifi firmware for the endpoints. On reception the display is modified. History is captured and saved every 60s into local storage giving graphs of several parameters over a few days.   
 
 <div>
 <img alt="UI" src="screenshots/Screenshot 2024-12-23 at 18.11.23.png" />
@@ -29,7 +29,7 @@ It consumes PGN 127508 and 130829 from a seasmart http stream the latter contain
 - [-] ~~Make the BLE work in the background ~~  The Web Bluetooth API is not available in any background task.
 - [x] Add charge discharge gauge in svg
 - [x] Port to use seasmart http stream and deprecate BLE stream
-- [x] State of charge and remaining charge graphs
+- [x] State of charge and remaining charge graphs broken - now fixed.
 
 
 
